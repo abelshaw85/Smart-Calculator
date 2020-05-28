@@ -167,7 +167,20 @@ public class Main {
     private static boolean manageCommand(String command) {
         switch (command) {
             case "/help":
-                System.out.println("The program calculates the answer to add or subtract operations");
+                System.out.println("Smart Calculator is a command-line tool to perform simple arithmetic operations." +
+                        "\nTo use: Write the expression you wish to calculate. Note that the calculator uses BODMAS " +
+                        "order of operations, so enclose part of an expression in parenthesis to perform that part " +
+                        "first." +
+                        "\nTo store variables, use the format [variable name] = [value]" +
+                        "\nTo check the value of a variable, type its name." +
+                        "\nVariables can be used in expressions, for example:" +
+                        "\n\tn = 5" +
+                        "\n\tn * 3" +
+                        "\n\tResult: 15" +
+                        "\nValid operators:" +
+                        "\n+ - * / ^" +
+                        "\nCompatible with large numbers." +
+                        "\nTo exit the application, type /exit");
                 return true;
             case "/exit":
                 return false;
