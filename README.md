@@ -10,7 +10,8 @@ in-order to maintain BODMAS rules.
 ## How to Use ##
 Open your favourite Command Line application and navigate to the location of the smart-calculator.jar file.
 Once there, run the following command:
-java -jar smart-calculator.jar
+>java -jar smart-calculator.jar
+>
 If at any time you get stuck, you can type /help to get a short explanation of how to use the application.
 You can store variables by typing the name you wish to use followed by an = sign and the value you wish to assign:
 >n = 10
