@@ -10,7 +10,7 @@ public class PostfixConverter {
         System.arraycopy(inputsArray, 0, inputs, 0, inputsArray.length); //copy values to larger array
         inputs[inputs.length - 1] = ")";
 
-        Deque<String> stack = new ArrayDeque();
+        Deque<String> stack = new ArrayDeque<String>();
         StringBuilder postfixExpression = new StringBuilder();
         stack.push("(");
 

@@ -2,7 +2,7 @@ package calculator;
 
 import java.math.BigInteger;
 
-public class Calculator {
+public class BigIntegerCalculator {
     public static BigInteger add(BigInteger num1, BigInteger num2) {
         return num1.add(num2);
     }

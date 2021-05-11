@@ -12,14 +12,14 @@ public class StringValidator {
 
     public static boolean isOperator(String input) {
         String operatorsRegex = "[\\+\\-]*";
-        String operatorsRegex2 = "[\\*\\/\\^]";//"[\\/\\^\\*].";
+        String operatorsRegex2 = "[\\*\\/\\^]";
         if (input.matches(operatorsRegex) || input.matches(operatorsRegex2)) {
             return true;
         }
         return false;
     }
 
-    //Contains matching parenthesis, and at least one operator
+    // Contains matching parenthesis, and at least one operator
     public static boolean isValidExpression(String[] parts) {
         int leftBrackets = 0;
         int rightBrackets = 0;
@@ -34,5 +34,11 @@ public class StringValidator {
             }
         }
         return operatorFound && leftBrackets == rightBrackets;
+    }
+    
+    // Check input contains only valid characters (letters, numbers or operators).
+    public static boolean hasValidCharacters(String input) {
+        String validCharsRegex = "[()\\w\\s+-=*^]+";
+        return input.matches(validCharsRegex);
     }
 }
