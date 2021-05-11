@@ -14,15 +14,21 @@ java -jar smart-calculator.jar
 If at any time you get stuck, you can type /help to get a short explanation of how to use the application.
 You can store variables by typing the name you wish to use followed by an = sign and the value you wish to assign:
 >n = 10
+>
 The variable can be used in place of a number when performing arithmetic, e.g.
 >n + 5
+>
 You can perform basic arithmetic, such as addition, subtraction, multiplication and division. You can use exponents to calculate values.
 You can chain operations together as well, and BODMAS will be used to calculate the end value. Here we use brackets to give priority to 7^2:
 >5 - 2 * 3 + (7 ^ 2)
 >48
+
 The Smart Calculator allows for huge numbers, even if they or their results are larger than standard int or long data types. Here we store the max value of long, and
   calculate it * 2:
 > bignumber = 9223372036854775807
+
 > Variable 'bignumber' with value '9223372036854775807' stored in memory.
+
 > bignumber * 2
+
 > 18446744073709551614
