@@ -2,3 +2,5 @@ build/
 out/
 test/
 /bin/
+*.jar
+!smart-calculator.jar
